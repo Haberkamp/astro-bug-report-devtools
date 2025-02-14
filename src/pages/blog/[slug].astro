@@ -18,5 +18,20 @@ const { Content } = await render(blogPost);
 ---
 
 <Layout>
+  <div class="container">
   <Content />
+  </div>
 </Layout>
+
+<style is:global>
+.container {
+  padding-inline: 1rem;
+  max-width: 800px;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+</style>
