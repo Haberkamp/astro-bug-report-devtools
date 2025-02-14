@@ -1,0 +1,46 @@
+{
+  "name": "",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "@astrojs/react": "^4.2.0",
+    "@astrojs/vercel": "^8.0.5",
+    "@nanostores/react": "^0.8.4",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "astro": "^5.3.0",
+    "astro-expressive-code": "^0.40.1",
+    "astro-icon": "^1.1.5",
+    "howler": "^2.2.4",
+    "nanostores": "^0.11.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-hotkeys-hook": "^4.6.1",
+    "sharp": "^0.33.5",
+    "zod": "^3.24.1"
+  },
+  "volta": {
+    "node": "22.13.1",
+    "pnpm": "9.15.4"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.4",
+    "@storybook/addon-essentials": "^8.5.3",
+    "@storybook/addon-interactions": "^8.5.3",
+    "@storybook/blocks": "^8.5.3",
+    "@storybook/html": "^8.5.3",
+    "@storybook/html-vite": "^8.5.3",
+    "@storybook/test": "^8.5.3",
+    "@types/howler": "^2.2.12",
+    "astro-seo": "^0.8.4",
+    "storybook": "^8.5.3"
+  }
+}

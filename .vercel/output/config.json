@@ -1,0 +1,53 @@
+{
+	"version": 3,
+	"routes": [
+		{
+			"src": "^/plr$",
+			"headers": {
+				"Location": "/pro-level-react"
+			},
+			"status": 301
+		},
+		{
+			"src": "^/react$",
+			"headers": {
+				"Location": "/pro-level-react"
+			},
+			"status": 301
+		},
+		{
+			"handle": "filesystem"
+		},
+		{
+			"src": "^/_astro/(.*)$",
+			"headers": {
+				"cache-control": "public, max-age=31536000, immutable"
+			},
+			"continue": true
+		},
+		{
+			"src": "^/_server-islands/([^/]+?)/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/_image/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/blog/([^/]+?)/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/plr/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/react/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/$",
+			"dest": "_render"
+		}
+	]
+}
